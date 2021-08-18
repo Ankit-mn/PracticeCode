@@ -1,0 +1,29 @@
+package Opps;
+class Employee{
+	float Salary=40000;
+	int bonous=5000;
+	public void show() {
+		System.out.println("inside the parent class");
+	}
+	public void display() {
+		System.out.println("we are inside the display method of parent class");
+	}
+	
+}
+
+public class Programmer extends Employee{
+int bonous=10000;
+public void show() {
+	System.out.println("bonous of employee is:"+super.bonous);
+	System.out.println("inside the child class");
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Programmer p=new Programmer();
+System.out.println("Programmer salary is:"+p.Salary);
+System.out.println("Bonous of programmer is: is:"+p.bonous);
+p.show();
+p.display();
+	}
+
+}
