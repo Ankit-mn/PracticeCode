@@ -1,0 +1,48 @@
+package cisco.java.program;
+
+public class TypecastExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int i=100;
+long l =i;
+System.out.println("long value " + l);
+int o=(int) l;
+System.out.println("int value " + o);
+char t= (char) i;
+System.out.println("char value " + t);
+
+
+double d= 1900184984848.12549889585;
+float r=(float) d;
+System.out.println("double value " + d );
+System.out.println("float value " + r );
+
+
+//Type cast from Double--->LonG--->Int in Series------------//
+double d2=100.04;
+long l2=(long)d2;//explicit type casting required//
+int i2=(int)l2;//explicit type casting required//
+System.out.println("double value " + d2 );
+System.out.println("long value " + l2 );
+System.out.println("int value " + i2 );
+
+
+//Type cast Between float and double//
+float f=1;//Automatic type conversion from long to float//
+System.out.println("float  value " + f );
+
+//Type cast between Byte ,INt and Double//
+
+byte b;
+int i1=257;
+double dd=323.142;
+System.out.println("converesion of int int byte.");
+b=(byte)i1;//i%256 will happen//
+System.out.println("i1= " + i1 + "b="+b);
+System.out.println("\nConversion of double to byte.");
+b=(byte)dd;//d%256 will happen//
+System.out.println("dd = " + dd + " b="+b);
+	}
+
+}
