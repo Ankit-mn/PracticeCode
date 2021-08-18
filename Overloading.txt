@@ -1,0 +1,24 @@
+package Methods;
+
+public class Overloading {
+
+	public void area(int a,int h)
+	{
+		System.out.println("Arrea of triangle : " +(0.5*a*h));
+		
+
+	}
+	public void area(long r)
+	{
+		System.out.println("Arrea of circle : " +(3.14*r*r));
+	}
+	public void area(float g, int c) {
+		System.out.println("printing the value : " +g +"------"+c);
+	}
+	public void area(int h,float g, char m) {
+		System.out.println("printing the value : " +h +"------"+g+"------"+m);
+	}
+	public static void main (String[]args) {
+		
+	}
+}
